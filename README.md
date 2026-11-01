@@ -1,2 +1,323 @@
-# Customer-Shopping-Behavior-Analysis
-End-to-end Customer Shopping Behavior Analysis using Python, SQL, and Power BI. Includes data cleaning, exploratory data analysis, feature engineering, SQL business queries, and an interactive dashboard to uncover customer purchasing patterns and business insights.
+
+# Customer Shopping Behavior Analysis
+
+An end-to-end data analytics project that explores customer shopping patterns and transforms raw data into meaningful business insights using Python, SQL, and Power BI.
+
+The project covers the complete data analytics workflow, including data loading, exploratory data analysis (EDA), data cleaning, SQL analysis, interactive dashboard development, project documentation, and presentation preparation using Gamma.
+
+## 1. Overview
+
+The objective of this project is to understand customer purchasing behaviour, identify shopping patterns, and generate insights that can support business decision-making.
+
+The analysis focuses on:
+
+- Customer demographics and shopping preferences
+- Purchase amounts and revenue patterns
+- Product and category performance
+- Discounts and promotional activities
+- Subscription behaviour
+- Shipping preferences
+- Customer segmentation and purchasing trends
+
+## 2. Dataset
+
+The dataset contains **3,900 customer records and 18 original columns**.
+
+It includes information related to:
+
+- Customer age and gender
+- Product category and item purchased
+- Purchase amount and review rating
+- Discounts and promotional codes
+- Subscription status and previous purchases
+- Payment method and shipping type
+- Purchase frequency
+
+During data preprocessing, additional analytical features were created, including:
+
+- **Age Group:** Customers were categorised into Young Adult, Adult, Middle-aged, and Senior groups.
+- **Purchase Frequency Interval:** Purchase frequency categories were converted into approximate day intervals for further analysis.
+
+**Dataset Source:** Add the original dataset source and licence information before publishing.
+
+## 3. Tools and Technologies
+
+| Tool | Purpose |
+|---|---|
+| Python | Data loading, cleaning, EDA, and feature engineering |
+| Pandas and NumPy | Data manipulation and numerical operations |
+| Matplotlib and Seaborn | Exploratory data visualisation |
+| PostgreSQL | Database storage and SQL analysis |
+| MySQL and SQL Server | Alternative database platforms for adapted SQL queries |
+| SQL | Business analysis and data extraction |
+| Power BI | Interactive dashboard development |
+| Gamma | Project presentation |
+| Microsoft Word / PDF | Project documentation and reporting |
+
+**Database Note:** PostgreSQL was used in the project workflow. SQL queries may require modifications to work with MySQL or SQL Server because database syntax and functions can differ across platforms.
+
+## 4. Project Workflow
+
+The project follows these major steps:
+
+1. **Data Loading in Python:** Imported the dataset and inspected its structure, dimensions, and data types.
+
+2. **Exploratory Data Analysis (EDA):** Examined summary statistics, distributions, missing values, and relationships between variables.
+
+3. **Data Cleaning:** Standardised column names, handled missing values, removed redundant columns, and prepared the dataset for analysis.
+
+4. **Feature Engineering:** Created additional analytical features, including age groups and purchase-frequency intervals.
+
+5. **Database Integration:** Loaded the cleaned dataset into PostgreSQL for structured data storage and querying.
+
+6. **SQL Analysis:** Executed business-oriented SQL queries to analyse revenue, products, discounts, subscriptions, and customer segments.
+
+7. **Power BI Dashboard:** Developed an interactive dashboard to visualise key performance indicators and customer purchasing patterns.
+
+8. **Project Documentation and Presentation:** Prepared a project report and a presentation using Gamma to communicate the methodology and findings.
+
+## 5. Power BI Dashboard
+
+The Power BI dashboard provides an interactive overview of customer shopping behaviour.
+
+### Key Performance Indicators (Full Dataset)
+
+- **Total Customers:** 3,900
+- **Average Purchase Amount:** $59.76
+- **Average Review Rating:** 3.75
+
+### Dashboard Visualisations
+
+- Sales by Category
+- Revenue by Category
+- Percentage of Customers by Subscription Status
+- Revenue by Age Group
+- Sales by Age Group
+
+### Interactive Filters
+
+The dashboard includes slicers that allow users to explore the data based on:
+
+- Subscription Status
+- Gender
+- Product Category
+- Shipping Type
+
+### Dashboard Preview
+
+Click the image below to view the full-size dashboard screenshot.
+
+[![Customer Shopping Behavior Dashboard](dashboard.png)](dashboard.png)
+
+**Note:** The uploaded dashboard screenshot shows a filtered view with Free Shipping selected. Therefore, its displayed KPIs differ from the full-dataset metrics listed above. Dashboard values change dynamically based on the selected filters.
+
+## 6. SQL Analysis
+
+SQL was used to answer business questions and extract meaningful insights from the customer shopping dataset.
+
+The analysis includes the following questions:
+
+1. What is the total purchase revenue generated by male and female customers?
+
+2. Which customers made purchases above the overall average purchase amount while using a discount?
+
+3. Which five products have the highest average review ratings?
+
+4. How does the average purchase amount differ between Standard and Express shipping?
+
+5. How do subscribers and non-subscribers compare in terms of customer count, average spending, and total revenue?
+
+6. Which products have the highest discount rates?
+
+7. How can customers be classified into New, Returning, and Loyal segments based on their previous purchases?
+
+8. What are the top three products within each product category?
+
+9. What is the subscription status of repeat buyers?
+
+10. How does revenue vary across different age groups?
+
+These queries demonstrate the use of SQL for data extraction, aggregation, filtering, grouping, and ranking to solve practical business problems.
+
+## 7. Key Results
+
+The following metrics represent the overall dataset analysis:
+
+| Metric | Result |
+|---|---:|
+| Total Customer Records | 3,900 |
+| Average Purchase Amount | $59.76 |
+| Average Review Rating | 3.75 |
+| Female Customer Revenue | $75,191 |
+| Male Customer Revenue | $157,890 |
+| Subscribers | 27% |
+| Non-subscribers | 73% |
+
+The analysis provides a basis for understanding:
+
+- Differences in purchasing behaviour across customer groups
+- Revenue contributions from different customer segments
+- Product and category performance
+- Subscription patterns
+- Purchasing trends across age groups
+- The relationship between discounts and customer purchases
+
+*These results describe the dataset analysed in this project and should not be interpreted as population-wide or causal findings.*
+
+## 8. Repository Structure
+
+The repository is organised into the following folders and files:
+
+```text
+Customer-Shopping-Behavior-Analysis/
+│
+├── Python/
+│   └── customer_behaviour.ipynb
+│
+├── SQL/
+│   └── project_queries.sql
+│
+├── PowerBI/
+│   └── Customer_Behavior_Dashboard.pbix
+│
+├── dashboard.png
+│
+├── Documentation/
+│   └── Project_Report.pdf
+│
+├── Presentation/
+│   └── project_presentation.pdf
+│
+├── data/
+│   └── README.md
+│
+├── requirements.txt
+│
+└── README.md
+```
+
+Note: Update the filenames and folder structure according to the actual files uploaded to the repository. The raw dataset should only be included if its licence permits redistribution.
+
+## 9. How to Run the Project
+
+### Prerequisites
+
+Before running the project, ensure that the following tools are installed:
+
+- Python 3.x
+- Jupyter Notebook or JupyterLab
+- PostgreSQL, MySQL, or SQL Server
+- Power BI Desktop
+- Access to the project dataset
+
+### Step 1: Clone the Repository
+
+Open a terminal and execute:
+
+```bash
+git clone https://github.com/thakurshivi2808-gif/Customer-Shopping-Behavior-Analysis.git
+
+cd Customer-Shopping-Behavior-Analysis
+```
+
+### Step 2: Set Up the Python Environment
+
+Create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment on Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+For macOS/Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+If a requirements file is not available, install the packages used in the notebook. For example:
+
+```bash
+pip install pandas numpy matplotlib seaborn sqlalchemy psycopg2-binary jupyter
+```
+
+### Step 3: Run the Python Analysis
+
+1. Open Jupyter Notebook.
+2. Navigate to the `Python/` folder.
+3. Open the project notebook.
+4. Update the dataset file path if required.
+5. Execute the notebook cells in sequence.
+
+This will perform data loading, EDA, data cleaning, and feature engineering.
+
+### Step 4: Set Up the Database and Execute SQL Queries
+
+1. Install and start your selected database server.
+2. Create a database for the project.
+3. Configure the database connection in the Python notebook or script.
+4. Load the cleaned dataset into the database.
+5. Open the SQL file in your database client.
+6. Execute the queries to perform business analysis.
+
+Use the appropriate database driver and adapt SQL statements when switching between PostgreSQL, MySQL, and SQL Server.
+
+**Important:** Do not store database passwords or credentials directly in notebooks or publicly accessible files.
+
+### Step 5: Open the Power BI Dashboard
+
+1. Open the `.pbix` file from the `PowerBI/` folder using Power BI Desktop.
+2. Update the data source or database connection if required.
+3. Refresh the dataset.
+4. Explore the dashboard using the available slicers and visualisations.
+
+### Step 6: Review the Project Report and Presentation
+
+- Open the project report from the `Documentation/` folder.
+- Open the project presentation from the `Presentation/` folder.
+
+These deliverables provide an overview of the project methodology, analysis, visualisations, and business findings.
+
+## 10. Project Deliverables
+
+The project includes the following deliverables:
+
+- Python notebook for data loading, EDA, cleaning, and feature engineering
+- SQL queries for business analysis
+- Power BI interactive dashboard
+- Detailed project report
+- Project presentation created using Gamma
+
+## 11. Important Notes
+
+- Add the original dataset source and licence information before publishing.
+- Do not upload passwords, database credentials, or sensitive information.
+- Avoid including personal computer file paths in the notebook.
+- Use environment variables or a local configuration file excluded through `.gitignore` for database credentials.
+- Ensure that all shared datasets and project files are permitted for public distribution.
+- Check that screenshots and reports do not expose confidential information.
+
+## 12. Author
+
+**Shivam Kumari**
+
+Data Analytics | Python | SQL | Power BI
+
+- GitHub: [My GitHub Profile](https://github.com/thakurshivi2808-gif)
+- LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/shivam-kumari-68a03b2a9/)
+
+---
+
+*Developed as an end-to-end data analytics project demonstrating data preparation, exploratory analysis, SQL-based business analysis, interactive dashboard development, and business communication.*
+
