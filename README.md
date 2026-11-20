@@ -38,7 +38,6 @@ During data preprocessing, additional analytical features were created, includin
 - **Age Group:** Customers were categorised into Young Adult, Adult, Middle-aged, and Senior groups.
 - **Purchase Frequency Interval:** Purchase frequency categories were converted into approximate day intervals for further analysis.
 
-**Dataset Source:** Add the original dataset source and licence information before publishing.
 
 ## 3. Tools and Technologies
 
